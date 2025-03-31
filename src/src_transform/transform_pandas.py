@@ -11,10 +11,10 @@ def create_dim_design_table(df_des):
     """Converts source df table to target df table schema
 
     Positional arguments:
-    - df_des (panda df obj): The table in dataframe format - source
+    - df_des (pandas df obj): The table in dataframe format - source
 
     Returns:
-    - df_dim_design (panda df obj): The table in dataframe format - target
+    - df_dim_design (pandas df obj): The table in dataframe format - target
 
     Exceptions:
     - KeyError: Key does not exist in dictionary
@@ -34,10 +34,10 @@ def create_dim_currency_table(df_cur):
     """Converts source df table to target df table schema
 
     Positional arguments:
-    - df_cur (panda df obj): The table in dataframe format - source
+    - df_cur (pandas df obj): The table in dataframe format - source
 
     Returns:
-    - df_dim_currency (panda df obj): The table in dataframe format - target
+    - df_dim_currency (pandas df obj): The table in dataframe format - target
 
     Exceptions:
     - KeyError: Key does not exist in dictionary
@@ -65,11 +65,11 @@ def create_dim_staff_table(df_sta, df_dep):
     """Converts two source df table to one target df table schema
 
     Positional arguments:
-    - df_sta (panda df obj): The table in dataframe format - source
-    - df_dep (panda df obj): The table in dataframe format - source
+    - df_sta (pandas df obj): The table in dataframe format - source
+    - df_dep (pandas df obj): The table in dataframe format - source
 
     Returns:
-    - df_dim_staff (panda df obj): The table in dataframe format - target
+    - df_dim_staff (pandas df obj): The table in dataframe format - target
 
     Exceptions:
     - KeyError: Key does not exist in dictionary
@@ -101,10 +101,10 @@ def create_dim_location_table(df_addr):
     """Converts source df table to target df table schema
 
     Positional arguments:
-    - df_addr (panda df obj): The table in dataframe format - source
+    - df_addr (pandas df obj): The table in dataframe format - source
 
     Returns:
-    - df_dim_location_mod_2 (panda df obj): The table in dataframe format - target
+    - df_dim_location_mod_2 (pandas df obj): The table in dataframe format - target
 
     Exceptions:
     - KeyError: Key does not exist in dictionary
@@ -128,11 +128,11 @@ def create_dim_counterparty_table(df_addr, df_cp):
     """Converts two source df table to one target df table schema
 
     Positional arguments:
-    - df_addr (panda df obj): The table in dataframe format - source
-    - df_cp (panda df obj): The table in dataframe format - source
+    - df_addr (pandas df obj): The table in dataframe format - source
+    - df_cp (pandas df obj): The table in dataframe format - source
 
     Returns:
-    - df_dim_counterparty_mod_2 (panda df obj): The table in dataframe format - target
+    - df_dim_counterparty_mod_2 (pandas df obj): The table in dataframe format - target
 
     Exceptions:
     - KeyError: Key does not exist in dictionary
@@ -184,7 +184,7 @@ def create_dim_date_table(start="2019/01/01", end="2030/12/31"):
     - end (str): The end date in string format
 
     Returns:
-    - df_date_mod_2 (panda df obj): The table in dataframe format - target
+    - df_date_mod_2 (pandas df obj): The table in dataframe format - target
 
     Exceptions:
     - ValueError: Invalid table value format
@@ -217,10 +217,10 @@ def create_fact_sales_order_table(df_sales):
     """Converts source df table to target df table schema
 
     Positional arguments:
-    - df_sales (panda df obj): The table in dataframe format - source
+    - df_sales (pandas df obj): The table in dataframe format - source
 
     Returns:
-    - df_fact_sales_order (panda df obj): The table in dataframe format - target
+    - df_fact_sales_order (pandas df obj): The table in dataframe format - target
 
     Exceptions:
     - KeyError: Key does not exist in dictionary
