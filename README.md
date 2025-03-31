@@ -1,12 +1,12 @@
 # Data Pipeline Project - Terrific Totes
 
 ## Overview
-Terrific Totes is a fictional company that operates an OLTP database and a data warehouse used for reporting and visualizations. The goal of this project is to develop applications that Extract, Transform, and Load (ETL) data from the OLTP database into a data lake and warehouse hosted in AWS. This solution is reliable, scalable, and fully managed using Infrastructure-as-Code.
+Terrific Totes is a fictional company that operates an OLTP database and a data warehouse used for reporting and visualizations. The goal of this project is to develop a fully automated pipeline hosted in AWS to Extract, Transform and Load data from an OLTP database into a centralized enterprise data warehouse for future report and analysis. This solution is reliable, scalable, and fully managed using Infrastructure-as-Code.
 
 ## Features
 - **Automated Data Processing**
   - **EventBridge Scheduler**: Triggers data ingestion every 5 minutes.
-  - **Step Machine with JSON Payloads**: Orchestrates the workflow.
+  - **Step Machine**: Orchestrates the workflow.
   - **Lambda Functions & Layers**: 
     - One Python application ingests all tables from the `totesys` database. Implements incremental refresh so that only new
       and/or updated data is processed for optimisation of resources.
@@ -28,10 +28,10 @@ Terrific Totes is a fictional company that operates an OLTP database and a data 
 ![Architecture Diagram](ETL_architecture.png)   
 
 ## Tech Stack
-- **Version Control**: GitHub
+- **Version Control**: Git
 - **Infrastructure & CI/CD**: Terraform, GitHub Actions, Makefile
-- **Programming & Libraries**: Python, boto3, pandas, numpy, pg8000, freezegun, coverage, bandit, black
-- **AWS Services**: CloudWatch, Lambda, EventBridge, Step Functions, SNS, S3, Secrets Manager
+- **Programming & Libraries**: Python, boto3, pandas, numpy, pg8000, coverage, bandit, black
+- **AWS Services**: Lambda, S3, EventBridge, CloudWatch, Step Functions, SNS, Secrets Manager
 - **Development Tools**: Visual Studio Code, Tableau
 
 ## Installation & Setup
