@@ -113,6 +113,3 @@ Terrific Totes is a fictional company that operates an OLTP database and a data 
 |-- README.md               # Documentation for final project
 |-- READMEBRIEF.md          # Documentation for project brief
 ```
-
-## Contact
-For any questions or issues, reach out via [GitHub Issues](https://github.com/ys218279/team-09-sperrins/issues).
