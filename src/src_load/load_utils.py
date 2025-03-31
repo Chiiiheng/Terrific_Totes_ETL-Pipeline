@@ -250,7 +250,3 @@ def delete_all_from_dw():
     for table in tables:
         query = f"DELETE FROM {identifier(table)};"
         conn.run(query)
-
-
-if __name__ == "__main__":
-    delete_all_from_dw()
